@@ -1,0 +1,36 @@
+<header class="relative ph3 ph4-l white | header">
+  <div class="absolute top-0 left-0 right-0 bottom-0 bg-red | header-bg"></div>
+  <div class="relative mw7 center cf">
+    <nav class="pv3 cf">
+      <ul class="fr-ns w-80-ns w-two-thirds-l ma0 pa0 pl3-ns ma0 list f6 tc tl-ns | main-nav">
+        <li class="dib mr2"><a href="/" class="link white hover-light-blue">Home</a></li>
+        <li class="dib mh2"><a href="/getting-started" class="link white hover-light-blue">Getting started</a></li>
+        <!--<li class="dib mh2"><a href="/blog" class="link white hover-light-blue">Blog</a></li>-->
+        <li class="dib mh2">
+          <a href="https://github.com/libitx/preserve-cli" class="link white hover-light-blue">
+            <svg class="icon icon-github">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+            Github
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    
+    <div class="relative fl w-20 w-third-l pt3 pr3 <% if (is_home()) { %> pt0-l <% } %> tr">
+      <img src="/images/jars.png" class="absolute right-0 <% if (is_home()) { %> static-l w-auto-l <% } else { %> right-1-l <% } %> mw-none | header-image" />
+    </div>
+    <div class="fr w-80 w-two-thirds-l pl3">
+      <% if (is_home()) { %>
+        <h1 class="mt0 mb1 mb2-ns oleo-script f1 fw7 lh-title washed-yellow"><%= config.title %></h1>
+        <div class="measure">
+          <h2 class="mv0 lora f4 f3-ns fw7 lh-title"><%= config.subtitle %></h2>
+        </div>
+      <% } else { %>
+        <h2 class="mv0 oleo-script f2 fw7 lh-title washed-yellow"><%= config.title %></h2>
+      <% } %>%>
+    </div>
+
+  </div>
+</header>

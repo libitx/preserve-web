@@ -1,0 +1,18 @@
+<main class="ph3 ph4-l pt4 pt2-l">
+  <div class="mw7 center cf">
+    <div class="fr-ns w-80-ns w-two-thirds-l pl3-ns">
+      <% if ( !is_home() ) { %>
+        <h1 class="mt0 mb3 lora f2 fw7 lh-title navy"><%= page.title %></h1>
+      <% } %>
+      <div class="measure | content">
+        <%- page.content %>
+      </div>
+
+      <% if ( is_home() ) { %>
+        <p class="mv4 tc">
+          <a href="/getting-started" class="dib ph5 pv2 link oleo-script f2 fw7 washed-yellow hover-white bg-animate bg-green ba bw2 b--washed-yellow br3 | cta">Get started</a>
+        </p>
+      <% } %>
+    </div>
+  </div>
+</main>

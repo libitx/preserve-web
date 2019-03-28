@@ -1,0 +1,231 @@
+html {
+  font-size: 16px;
+  @media screen and (min-width: 30em) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 60em) {
+    font-size: 20px;
+  }
+}
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+}
+
+.oleo-script {
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.lora {
+  font-family: 'Lora', serif;
+}
+
+.fira {
+  font-family: 'Fira Mono', monospace;
+}
+
+.header {
+  height: 8rem;
+
+  h1 {
+    text-shadow: #001B44 -1px -1px,
+                 #001B44 2px -2px,
+                 #001B44 -2px 2px,
+                 #001B44 4px 4px;
+    letter-spacing: 2px;
+  }
+  h2 {
+    text-shadow: #001B44 -0.5px -0.5px,
+                 #001B44 1px -1px,
+                 #001B44 -1px 1px,
+                 #001B44 2px 2px;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (min-width: 60em) {
+    height: 10rem;
+  }
+
+  .is-home & {
+    height: 18rem;
+
+    h2 {
+      text-shadow: rgba(#001B44, 0.6) 2px 2px 1px;
+      letter-spacing: 0;
+    }
+  }
+
+  .icon {
+    filter: drop-shadow(1px 1px 1px rgba(#001B44, 0.6));
+  }
+}
+
+.header-bg {
+  background-image: url('/images/bg-header.png');
+  background-size: auto;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+  box-shadow: 0 1px 1px rgba(#001B44, 0.8);
+
+  .is-home & {
+
+  }
+}
+
+.header-image {
+  width: 144px;
+  margin-top: -3rem;
+
+  .is-home & {
+    width: 8rem;
+    margin-top: 0;
+
+    @media screen and (min-width: 30em) {
+      width: 10rem;
+    }
+    @media screen and (min-width: 60em) {
+      width: 12rem;
+    }
+  }
+}
+
+.main-nav {
+  text-shadow:  rgba(#001B44, 0.6) 1px 1px 1px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+}
+
+.content {
+  h2, h3, h4 {
+    @extend .lora;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #001B44;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  ul {
+    padding-left: 1rem;
+  }
+
+  figure {
+    margin: 1rem -0.5rem;
+    @media screen and (min-width: 30em) {
+      margin-left: -4rem;
+    }
+    @media screen and (min-width: 60em) {
+      margin-left: -3rem;
+      margin-right: -1.5rem;
+    }
+    @media screen and (min-width: 70em) {
+      margin-left: -2.5rem;
+      margin-right: -2.5rem;
+    }
+    img {
+      box-shadow: 0px 1px 3px rgba(#001B44, 0.4);
+    }
+    //padding: 0;
+  }
+
+  pre, code {
+    @extend .fira;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  pre {
+
+  }
+  p code {
+    padding: 3px 6px;
+    color: #001B44;
+    background-color: rgba(#CCCCCC, 0.6);
+    border-radius: 3px;
+  }
+
+  a {
+    color: #357EDD;
+    text-decoration: none;
+    transition: color .15s ease-in,
+                border-color .15s ease-in;
+    border-bottom: 1px dashed #357EDD;
+
+    &:hover {
+      color: #FF4136;
+      border-bottom-style: solid;
+      border-color: #FF4136;
+    }
+  }
+  b, strong {
+    font-weight: 600;
+  }
+}
+
+.cta {
+  background-image: url('/images/bg-header.png');
+  background-size: auto;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  text-shadow: #001B44 -0.5px -0.5px,
+               #001B44 1px -1px,
+               #001B44 -1px 1px,
+               #001B44 2px 2px;
+  box-shadow: -0.5px -0.5px 1px rgba(#001B44, 0.6),
+              0.5px -0.5px 1px rgba(#001B44, 0.6),
+              -0.5px 0.5px 1px rgba(#001B44, 0.6),
+              2px 2px 2px rgba(#001B44, 0.6);
+
+  &:hover {
+    background-color: lighten(#19A974, 5%);
+  }
+}
+
+.footer {
+  height: 6rem;
+
+  p {
+    text-shadow: rgba(#001B44, 0.6) 1px 1px 1px;
+  }
+}
+
+.footer-bg {
+  top: 1px;
+  background-image: url('/images/bg-header.png');
+  background-size: auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transform: skewY(-4deg);
+  transform-origin: bottom right;
+  box-shadow: 0 -1px 1px rgba(#001B44, 0.8);
+}
+
+.img-libs {
+  box-shadow: 1px 1px 1px 1px rgba(#001B44, 0.3);
+}
+
+@import 'hljs';
