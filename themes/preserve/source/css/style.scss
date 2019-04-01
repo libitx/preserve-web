@@ -133,6 +133,9 @@ body {
   ul {
     padding-left: 1rem;
   }
+  ol {
+    padding-left: 1.5rem;
+  }
 
   figure {
     margin: 1rem -0.5rem;
@@ -157,6 +160,7 @@ body {
     @extend .fira;
     font-size: 0.9em;
     font-weight: 500;
+    line-height: 1.5;
   }
   pre {
 
