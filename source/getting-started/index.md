@@ -1,5 +1,6 @@
 ---
 title: Getting started
+description: Learn how to create on-chain websites using the Bitcoin (SV) blockchain.
 ---
 
 The *Preserve* CLI can be used to deploy files from any folder on your computer, and works great with any static site generator. It requires a Node.js runtime environment, so if necessary [install Node.js](https://nodejs.org/en/download/) first.
@@ -45,7 +46,7 @@ preserve status [path]
 preserve status public
 ```
 
-The displayed sitemap shows a list of all the files in your project, along with file size, sha256 hash, and whether the file has already been deployed or not.
+The displayed sitemap shows a list of all the files in your project, along with file size, `sha256` hash, and whether the file has already been deployed or not.
 
 ## 4. Deploy your files
 
@@ -57,7 +58,7 @@ preserve deploy [path]
 preserve deploy public
 ```
 
-Network rules currently limit a chain of more than 25 unconfirmed transactions. *Preserve* will fail if it hits this limit. If this happens, with for a confirmation, then try again.
+Network rules currently limit a chain of more than 25 unconfirmed transactions. *Preserve* will stop if it hits this limit. If this happens, wait for a confirmation, then try again.
 
 ## 5. Configure DNS
 

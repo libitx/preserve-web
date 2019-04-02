@@ -3,11 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %></title>
+  <meta name="description" content="<%= page.description %>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Oleo+Script+Swash+Caps:700|Fira+Mono:500" rel="stylesheet">
   <%- css('css/tachyons') %>
   <%- css('css/style') %>
+  
+  <meta property="og:site_name" content="Preserve">
+  <meta property="og:title" content="<%= page.title %>">
+  <meta property="og:description" content="<%= page.description %>">
+  <meta property="og:image" content="https://preserve.bitpaste.app/images/og-preserve.jpg">
+  <meta property="og:url" content="https://preserve.bitpaste.app">
+  <meta name="twitter:title" content="Preserve - <%= page.title %>">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="sans-serif dark-gray bg-washed-yellow | <%= body_classes() %>">
   <%- partial('_partial/header') %>

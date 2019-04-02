@@ -1,5 +1,6 @@
 ---
 title: Deploy websites to the Bitcoin blockchain
+description: Deploy HTML pages, static files and entire websites to the Bitcoin (SV) blockchain.
 ---
 
 ## On-chain websites
