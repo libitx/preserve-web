@@ -30,10 +30,13 @@ preserve init
 A new Bitcoin address and private key are generated and saved to a hidden `.bit` file in your working directory.
 **Remember to add it to your `.gitignore` file**.
 
-You'll need to send a small amount of Bitcoin (SV) to deploy files. Display your wallet information to see your address and balance.
+You'll need to send a small amount of Bitcoin (SV) to deploy files. If deploying many files or larger sized files, your wallet should be prepared by splitting the balance into many small UTXOs and waiting for all to confirm.
 
 ```bash
+# Display wallet address and balance
 preserve wallet
+# Split UTXO set
+preserve wallet split
 ```
 
 ## 3. View your sitemap
